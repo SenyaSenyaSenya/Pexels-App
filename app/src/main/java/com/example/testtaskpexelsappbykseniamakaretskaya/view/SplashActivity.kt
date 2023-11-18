@@ -7,13 +7,16 @@ import android.os.Handler
 import com.example.testtaskpexelsappbykseniamakaretskaya.R
 
 class SplashActivity : AppCompatActivity() {
+
+    private val SPLASH_DELAY: Long = 3000 // 3 секунды
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash)
         Handler().postDelayed({
-          //  val intent = Intent(this@SplashActivity, HomeScreen ::class.java)
-        //    HomeScreen(intent)
+            val intent = Intent(this@SplashActivity, HomeScreen::class.java)
+            startActivity(intent)
             finish()
-        }, 3000)
+        }, SPLASH_DELAY)
     }
 }
