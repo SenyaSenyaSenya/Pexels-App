@@ -1,9 +1,11 @@
 package com.example.testtaskpexelsappbykseniamakaretskaya.view
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
+import android.view.animation.AnimationUtils
+import android.widget.ImageView
+import androidx.appcompat.app.AppCompatActivity
 import com.example.testtaskpexelsappbykseniamakaretskaya.R
 
 class SplashActivity : AppCompatActivity() {
@@ -13,6 +15,11 @@ class SplashActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash)
+
+        val logoImageView = findViewById<ImageView>(R.id.logoImageView)
+        val scaleAnimation = AnimationUtils.loadAnimation(this, R.anim.scale_animation)
+        logoImageView.startAnimation(scaleAnimation)
+
         Handler().postDelayed({
             val intent = Intent(this@SplashActivity, HomeScreen::class.java)
             startActivity(intent)

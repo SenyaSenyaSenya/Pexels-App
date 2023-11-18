@@ -5,9 +5,11 @@
     android:background="@color/l_red">
 
     <ImageView
+        android:id="@+id/logoImageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:src="@drawable/splash_logo" />
+        android:src="@drawable/splash_logo"
+        android:scaleType="centerInside" />
 
 </RelativeLayout>
