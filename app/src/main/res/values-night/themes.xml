@@ -1,0 +1,15 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.TestTaskPexelsAppByKseniaMakaretskaya" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/d_white</item>
+        <item name="colorPrimaryVariant">@color/d_dark_gray</item>
+        <item name="colorOnPrimary">@color/d_red</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/d_gray</item>
+        <item name="colorSecondaryVariant">@color/d_black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+</resources>

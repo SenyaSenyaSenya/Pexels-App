@@ -1,0 +1,24 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.TestTaskPexelsAppByKseniaMakaretskaya" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/l_white</item>
+        <item name="colorPrimaryVariant">@color/l_dark_gray</item>
+        <item name="colorOnPrimary">@color/l_red</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/l_gray</item>
+        <item name="colorSecondaryVariant">@color/l_black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="LauncherTheme" parent="Theme.SplashScreen">
+
+        <item name="windowSplashScreenBackground">@color/l_red</item>
+
+        <item name="windowSplashScreenAnimatedIcon">@drawable/splash_logo</item>
+        <item name="windowSplashScreenAnimationDuration">300</item>
+        <item name="postSplashScreenTheme">@style/Theme.TestTaskPexelsAppByKseniaMakaretskaya</item>
+    </style>
+</resources>
